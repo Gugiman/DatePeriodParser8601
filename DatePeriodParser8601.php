@@ -12,12 +12,12 @@ class DatePeriodParser8601
     private $dateString;
 
     /**
-     * @var DateTime
+     * @var \DateTime
      */
     private $start;
 
     /**
-     * @var DateTime
+     * @var \DateTime
      */
     private $end;
 
@@ -79,7 +79,7 @@ class DatePeriodParser8601
                 $this->processWithNoPlaceholder();
                 return true;
 
-            } catch (Exception $e) {
+            } catch (\Exception $e) {
                 throw new \Exception('No format detected');
             }
         }
@@ -142,7 +142,7 @@ class DatePeriodParser8601
 
         if (strstr($dateStringExploded[1], "W")) {
             $weekNumber = str_replace("W", "", $dateStringExploded[1]);
-            $week_start = new DateTime();
+            $week_start = new \DateTime();
             $week_start->setISODate($dateStringExploded[0], $weekNumber);
             $this->start = clone $week_start->setTime(0, 0, 0);
             if (isset($dateStringExploded[2]) && $dateStringExploded[2] == "WE") {
@@ -162,11 +162,11 @@ class DatePeriodParser8601
      * @param DateInterval $interval
      * @return bool|DatePeriod
      */
-    public function asDatePeriod(DateInterval $interval)
+    public function asDatePeriod(\DateInterval $interval)
     {
 
         try {
-            return new DatePeriod($this->start, $interval, $this->end);
+            return new \DatePeriod($this->start, $interval, $this->end);
         } catch (\Exception $e) {
             return false;
         }
@@ -178,7 +178,7 @@ class DatePeriodParser8601
     /////////////////////////
 
     /**
-     * @return DateTime
+     * @return \DateTime
      */
     public function getStart()
     {
@@ -186,7 +186,7 @@ class DatePeriodParser8601
     }
 
     /**
-     * @return DateTime
+     * @return \DateTime
      */
     public function getEnd()
     {
