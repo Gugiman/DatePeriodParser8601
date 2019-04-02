@@ -1,0 +1,14 @@
+{
+    "name": "gugiman/date-period-parser8601",
+    "description": "PHP Class for rudimental parsing ob ISO8601 DatePeriods user e.g. by Amazon Alexas Slot type AMAZON.DATE",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dennis Steffen",
+            "email": "dennis.steffen@osnanet.de"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
+}
