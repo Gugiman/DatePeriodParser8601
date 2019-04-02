@@ -9,6 +9,6 @@
             "email": "dennis.steffen@osnanet.de"
         }
     ],
-    "minimum-stability": "beta",
+    "minimum-stability": "stable",
     "require": {}
 }
