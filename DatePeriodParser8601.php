@@ -1,5 +1,7 @@
 <?php
 
+namespace Gugiman\DatePeriodParser8601;
+
 /**
  * Class DatePeriodParser8601
  */
