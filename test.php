@@ -4,7 +4,10 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-include_once "DatePeriodParser8601.php";
+use Gugiman\DatePeriodParser8601;
+
+include_once "vendor/autoload.php";
+
 
 $test[] = "2015-11-24";
 $test[] = "2015-W48";
