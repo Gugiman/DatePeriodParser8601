@@ -1,5 +1,5 @@
 # DatePeriodParser8601
-PHP Class for rudimental parsing ob ISO8601 DatePeriods user e.g. by Amazon Alexas Slot type "AMAZON.DATE"
+PHP Class for rudimental parsing ob ISO8601 DatePeriods user e.g. by Amazon Alexas Slot type [AMAZON.DATE](https://developer.amazon.com/de/docs/custom-skills/slot-type-reference.html#date)
 
 ## Using
 Use like seen in test.php
