@@ -3,14 +3,36 @@
     "description": "PHP Class for rudimental parsing ob ISO8601 DatePeriods user e.g. by Amazon Alexas Slot type AMAZON.DATE",
     "type": "library",
     "license": "MIT",
+    "keywords": [
+        "alexa",
+        "alexa-skill",
+        "amazon-alexa",
+        "amazon-alexa-php",
+        "amazon-echo",
+        "amazon-echo-php",
+        "alexa-skill-php",
+        "echo",
+        "php",
+        "php7",
+        "php71",
+        "php72",
+        "skill",
+        "alexa-custom-skill",
+        "library",
+        "date",
+        "daterange"
+    ],
     "authors": [
         {
             "name": "Dennis Steffen",
-            "email": "dennis.steffen@osnanet.de"
+            "email": "dennis.steffen@osnanet.de",
+            "role": "Developer"
         }
     ],
-    "minimum-stability": "stable",
-    "require": {},
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0"
+    },
     "autoload": {
         "psr-4": {"Gugiman\\": "src/"}
     }

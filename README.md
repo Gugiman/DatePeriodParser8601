@@ -7,7 +7,7 @@ Use like seen in test.php
 ```php
 <?php
 
-include_once "DatePeriodParser8601.php";
+use Gugiman\DatePeriodParser8601;
 
 //$string = "2015-12-10";
 //$string = "2015-05";

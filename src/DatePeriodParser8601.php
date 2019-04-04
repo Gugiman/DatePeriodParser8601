@@ -42,7 +42,7 @@ class DatePeriodParser8601
 
     /**
      * @return bool
-     * @throws Exception
+     * @throws \Exception
      */
     private function process()
     {
@@ -89,7 +89,7 @@ class DatePeriodParser8601
 
     /**
      * @return bool
-     * @throws Exception
+     * @throws \Exception
      */
     private function processWithNoPlaceholder()
     {
@@ -118,7 +118,7 @@ class DatePeriodParser8601
     /**
      * @param string $yearString
      * @return bool
-     * @throws Exception
+     * @throws \Exception
      */
     private function processWithYearXPlaceholder(string $yearString)
     {
@@ -135,7 +135,7 @@ class DatePeriodParser8601
 
     /**
      * @return bool
-     * @throws Exception
+     * @throws \Exception
      */
     private function processWithWPlaceholder()
     {
@@ -161,8 +161,8 @@ class DatePeriodParser8601
     /////////////////////////
 
     /**
-     * @param DateInterval $interval
-     * @return bool|DatePeriod
+     * @param \DateInterval $interval
+     * @return bool|\DatePeriod
      */
     public function asDatePeriod(\DateInterval $interval)
     {
