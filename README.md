@@ -1,6 +1,12 @@
 # DatePeriodParser8601
 PHP Class for rudimental parsing ob ISO8601 DatePeriods user e.g. by Amazon Alexas Slot type [AMAZON.DATE](https://developer.amazon.com/de/docs/custom-skills/slot-type-reference.html#date)
 
+## Install via composer
+Require the package with composer:
+```
+composer require gugiman/date-period-parser8601
+```
+
 ## Using
 Use like seen in test.php
 
