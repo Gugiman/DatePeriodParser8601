@@ -9,18 +9,18 @@ use Gugiman\DatePeriodParser8601;
 include_once "vendor/autoload.php";
 
 
-$test[] = "2015-11-24";
-$test[] = "2015-W48";
-$test[] = "2015-W48-WE";
-$test[] = "2015-11";
-$test[] = "2015-11-XX";
-$test[] = "2016";
-$test[] = "201X";
-$test[] = "20XX";
-$test[] = "2XXX";
-$test[] = "2018-XX-XX";
-//$test[] = "2017-WI";
-$test[] = "test";
+//$test[] = "2015-11-24";
+//$test[] = "2015-W48";
+$test[] = "2019-W25-WE";
+//$test[] = "2015-11";
+//$test[] = "2015-11-XX";
+//$test[] = "2016";
+//$test[] = "201X";
+//$test[] = "20XX";
+//$test[] = "2XXX";
+//$test[] = "2018-XX-XX";
+////$test[] = "2017-WI";
+//$test[] = "test";
 
 foreach($test as $string){
 

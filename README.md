@@ -1,5 +1,5 @@
 # DatePeriodParser8601
-PHP Class for rudimental parsing ob ISO8601 DatePeriods user e.g. by Amazon Alexas Slot type [AMAZON.DATE](https://developer.amazon.com/de/docs/custom-skills/slot-type-reference.html#date)
+PHP Class for rudimental parsing of ISO8601 DatePeriods e.g. by Amazon Alexas Slot type [AMAZON.DATE](https://developer.amazon.com/de/docs/custom-skills/slot-type-reference.html#date)
 
 ## Install via composer
 Require the package with composer:
@@ -15,17 +15,23 @@ Use like seen in test.php
 
 use Gugiman\DatePeriodParser8601;
 
-//$string = "2015-12-10";
-//$string = "2015-05";
+//$string = "2019-05-10";
+//$string = "2019-05";
 //$string = "201X";
-$string = "2015-W25-WE";
+$string = "2019-W25-WE";
 $obj = new DatePeriodParser8601($string);
 
-// returns \DateTime object
 $obj->getStart();
+// returns \DateTime object of start
 
-// returns \DateTime object
+// $obj->getStart()->format("d.m.Y H:i:s");
+// returns 22.06.2019 00:00:00
+
 $obj->getEnd();
+// returns \DateTime object of end
+
+// $obj->getEnd()->format("d.m.Y H:i:s");
+// returns 23.06.2019 23:59:59
 
 // returns \DatePeriod object with given interval
 $obj->asDatePeriod(new \DateInterval("P1D"));
