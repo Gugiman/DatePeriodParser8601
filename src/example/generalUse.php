@@ -6,12 +6,12 @@ error_reporting(E_ALL);
 
 use Gugiman\DatePeriodParser8601;
 
-include_once "vendor/autoload.php";
+include_once "../../vendor/autoload.php";
 
 
 //$test[] = "2015-11-24";
 //$test[] = "2015-W48";
-$test[] = "2019-W25-WE";
+$test[] = "2022-W25-WE";
 //$test[] = "2015-11";
 //$test[] = "2015-11-XX";
 //$test[] = "2016";
