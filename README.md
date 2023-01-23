@@ -36,3 +36,9 @@ $obj->getEnd();
 // returns \DatePeriod object with given interval
 $obj->asDatePeriod(new \DateInterval("P1D"));
 ```
+
+## Donation
+
+BTC: 1Gn4ofNXpvwYSvyi2wC1kT3Hoas3kaifqx
+
+ETH (ERC20): 0x07d2b052abb86df996276fcc327296f344781ae8
