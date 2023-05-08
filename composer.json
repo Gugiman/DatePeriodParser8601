@@ -16,11 +16,13 @@
         "php7",
         "php71",
         "php72",
+        "php8",
         "skill",
         "alexa-custom-skill",
         "library",
         "date",
-        "daterange"
+        "daterange",
+        "ISO8601"
     ],
     "authors": [
         {
